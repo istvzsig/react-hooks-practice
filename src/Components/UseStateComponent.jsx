@@ -25,7 +25,7 @@ function changeTheme(callback, color) {
     }
 }
 
-function UseStateComponent() {
+export default function UseStateComponent() {
     // Normal version of useState
     const [c, setC] = useState(0);
     // Function version of useState
@@ -48,5 +48,3 @@ function UseStateComponent() {
         </>
     )
 }
-
-export default UseStateComponent;
