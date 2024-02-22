@@ -5,6 +5,8 @@ import UseEffectComponent from './components/UseEffectComponent';
 // @ts-ignore
 import UseContextComponent from './components/UseContextComponent';
 // @ts-ignore
+import UseRefComponent from './components/UseRefComponent.jsx';
+// @ts-ignore
 import ThemeProvider, {useTheme, useThemeUpdate} from './context/ThemeContext';
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
         <UseEffectComponent />
         <h4>UseContextComponent</h4>
         <UseContextComponent />
+        <hr />
+        <h4>UseRefComponent</h4>
+        <UseRefComponent />
         <hr />
       </ThemeProvider>
     </>
