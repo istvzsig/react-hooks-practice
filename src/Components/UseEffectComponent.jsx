@@ -16,7 +16,7 @@ export default function UseStateComponent() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetchJSONData(`https://jsonplaceholder.typicode.com/${resourceType}`)
+        fetchJSONData(`https://jsonplaceholder.typicode.com/${resourceType}/?_limit=2`)
             .then(data => setItems(data))
     }, [resourceType]);
 

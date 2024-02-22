@@ -2,6 +2,8 @@
 import UseStateComponent from './components/UseStateComponent';
 // @ts-ignore
 import UseEffectComponent from './components/UseEffectComponent';
+// @ts-ignore
+import UseContextComponent from './components/UseContextComponent';
 
 function App() {
   // Hooks cannot be used inside anything rather only in Components
@@ -14,6 +16,9 @@ function App() {
       <hr />
       <h4>UseEffectComponent</h4>
       <UseEffectComponent />
+      <hr />
+      <h4>UseContextComponent</h4>
+      <UseContextComponent />
       <hr />
     </>
   )
