@@ -40,8 +40,13 @@ export default function UseStateComponent() {
                 <button onClick={() => increaseCount(setCount)}>+</button>
             </div >
             <hr />
-            <div>
-                <button onClick={() => changeTheme(setTheme, "pink")}>Change Color</button>
+            <button onClick={() => changeTheme(setTheme, "pink")}>Change Color</button>
+            <br />
+            <br />
+            <div style={{
+                backgroundColor: theme.color,
+                color: theme.color === "blue" ? "white" : "black"
+            }}>
                 <div>ID: {theme.id}</div>
                 <div>COLOR: {theme.color}</div>
             </div>
